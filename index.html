@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista zakupów</title>
+  <link rel="stylesheet" href="public/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Lista zakupów</h1>
+
+    <div class="form-row">
+      <input type="text" id="nameInput" placeholder="Nazwa produktu">
+      <input type="number" id="quantityInput" placeholder="Ilość" min="1" max="99">
+      <button id="addButton">Dodaj produkt</button>
+    </div>
+
+    <div id="errorMessage" class="error"></div>
+
+    <div class="controls-row">
+      <label for="filterSelect">Pokaż: </label>
+      <select id="filterSelect">
+        <option value="all">Wszystkie</option>
+        <option value="toBuy">Do kupienia</option>
+        <option value="bought">Kupione</option>
+      </select>
+      <div id="counter">Do kupienia: 0</div>
+    </div>
+
+    <div id="listContainer"></div>
+
+    <div class="bonus-row">
+      <button id="clearBoughtButton">Usuń kupione</button>
+    </div>
+  </div>
+
+  <script type="module" src="public/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body {
+  background: #222;
+  color: #fff;
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 20px auto;
+}
+input, button, select {
+  background: #333;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px;
+}
+.form-row, .controls-row, .item {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+.bought span {
+  text-decoration: line-through;
+  color: gray;
+}
+.error {
+  color: #ff6b6b;
+}
